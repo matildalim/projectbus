@@ -1,124 +1,114 @@
-const heatmapData = [
-  {
-    load: 'Light Load',
-    gentle: { value: 0.80, status: 'optimal' },
-    moderate: { value: 0.81, status: 'optimal' },
-    aggressive: { value: 0.82, status: 'optimal' }
-  },
-  {
-    load: 'Medium Load',
-    gentle: { value: 0.88, status: 'optimal' },
-    moderate: { value: 0.90, status: 'optimal' },
-    aggressive: { value: 0.95, status: 'acceptable' }
-  },
-  {
-    load: 'Heavy Load',
-    gentle: { value: 0.98, status: 'optimal' },
-    moderate: { value: 1.05, status: 'acceptable' },
-    aggressive: { value: 1.15, status: 'wasteful' }
-  }
-];
-
-function getCellColor(status: string) {
-  switch (status) {
-    case 'optimal':
-      return 'bg-green-500';
-    case 'acceptable':
-      return 'bg-amber-500';
-    case 'wasteful':
-      return 'bg-red-500';
-    default:
-      return 'bg-gray-300';
-  }
-}
+import { useData } from '../context/DataContext';
 
 export function AccelerationHeatmap() {
+  const { scenarioType } = useData();
+
+  // Fuel consumption matrix (L/km) - from fuel_estimator.py
+  const matrix = {
+    'LIGHT': {
+      'GENTLE': { fuel: 0.800, penalty: 0 },
+      'MODERATE': { fuel: 0.810, penalty: 1.2 },
+      'AGGRESSIVE': { fuel: 0.820, penalty: 2.5 }
+    },
+    'MEDIUM': {
+      'GENTLE': { fuel: 0.880, penalty: 0 },
+      'MODERATE': { fuel: 0.920, penalty: 4.5 },
+      'AGGRESSIVE': { fuel: 0.945, penalty: 7.4 }
+    },
+    'HEAVY': {
+      'GENTLE': { fuel: 0.980, penalty: 0 },
+      'MODERATE': { fuel: 1.050, penalty: 7.1 },
+      'AGGRESSIVE': { fuel: 1.150, penalty: 17.3 }
+    }
+  };
+
+  const getColor = (load: string, accel: string) => {
+    const data = matrix[load][accel];
+    if (data.penalty === 0) return 'bg-green-100 border-green-300 text-green-900';
+    if (data.penalty < 5) return 'bg-green-50 border-green-200 text-green-800';
+    if (data.penalty < 10) return 'bg-yellow-100 border-yellow-300 text-yellow-900';
+    return 'bg-red-100 border-red-400 text-red-900 font-bold';
+  };
+
   return (
-    <div>
+    <div className="space-y-4">
+      <p className="text-sm text-gray-600">
+        Fuel consumption (L/km) by Load × Acceleration combination
+      </p>
+
       {/* Heatmap Table */}
       <div className="overflow-x-auto">
         <table className="w-full border-collapse">
           <thead>
             <tr>
-              <th className="border-2 border-gray-300 bg-gray-100 p-3 text-left text-gray-700">
-                Load Category
+              <th className="border border-gray-300 bg-gray-100 p-2 text-sm font-semibold"></th>
+              <th className="border border-gray-300 bg-green-50 p-2 text-sm font-semibold">
+                Gentle<br/>
+                <span className="text-xs font-normal">(&lt;1.5 m/s²)</span>
               </th>
-              <th className="border-2 border-gray-300 bg-gray-100 p-3 text-center text-gray-700">
-                Gentle Accel
+              <th className="border border-gray-300 bg-yellow-50 p-2 text-sm font-semibold">
+                Moderate<br/>
+                <span className="text-xs font-normal">(1.5-2.5 m/s²)</span>
               </th>
-              <th className="border-2 border-gray-300 bg-gray-100 p-3 text-center text-gray-700">
-                Moderate Accel
-              </th>
-              <th className="border-2 border-gray-300 bg-gray-100 p-3 text-center text-gray-700">
-                Aggressive Accel
+              <th className="border border-gray-300 bg-red-50 p-2 text-sm font-semibold">
+                Aggressive<br/>
+                <span className="text-xs font-normal">(&gt;2.5 m/s²)</span>
               </th>
             </tr>
           </thead>
           <tbody>
-            {heatmapData.map((row, rowIndex) => (
-              <tr key={rowIndex}>
-                <td className="border-2 border-gray-300 p-3 bg-gray-50 text-gray-900">
-                  {row.load}
+            {Object.entries(matrix).map(([load, accels]) => (
+              <tr key={load}>
+                <td className="border border-gray-300 bg-gray-100 p-2 text-sm font-semibold">
+                  {load}<br/>
+                  <span className="text-xs font-normal">
+                    {load === 'LIGHT' && '(0-30 pax)'}
+                    {load === 'MEDIUM' && '(31-60 pax)'}
+                    {load === 'HEAVY' && '(61+ pax)'}
+                  </span>
                 </td>
-                <td className="border-2 border-gray-300 p-0">
-                  <div className={`${getCellColor(row.gentle.status)} text-white p-4 text-center`}>
-                    <div className="text-2xl">{row.gentle.value}</div>
-                    <div className="text-sm opacity-90">L/km</div>
-                  </div>
-                </td>
-                <td className="border-2 border-gray-300 p-0">
-                  <div className={`${getCellColor(row.moderate.status)} text-white p-4 text-center`}>
-                    <div className="text-2xl">{row.moderate.value}</div>
-                    <div className="text-sm opacity-90">L/km</div>
-                  </div>
-                </td>
-                <td className={`border-2 border-gray-300 p-0 ${rowIndex === 2 ? 'border-4 border-red-700' : ''}`}>
-                  <div className={`${getCellColor(row.aggressive.status)} text-white p-4 text-center relative`}>
-                    <div className="text-2xl">{row.aggressive.value}</div>
-                    <div className="text-sm opacity-90">L/km</div>
-                    {rowIndex === 2 && (
-                      <div className="absolute -top-2 -right-2 bg-red-700 text-white px-2 py-1 rounded text-xs">
-                        17% PENALTY
-                      </div>
+                {Object.entries(accels).map(([accel, data]) => (
+                  <td 
+                    key={accel}
+                    className={`border-2 p-3 text-center ${getColor(load, accel)}`}
+                  >
+                    <div className="text-lg font-bold">{data.fuel.toFixed(3)}</div>
+                    {data.penalty > 0 && (
+                      <div className="text-xs mt-1">+{data.penalty}%</div>
                     )}
-                  </div>
-                </td>
+                    {data.penalty === 0 && (
+                      <div className="text-xs mt-1 text-green-600">✓ Optimal</div>
+                    )}
+                  </td>
+                ))}
               </tr>
             ))}
           </tbody>
         </table>
       </div>
 
-      {/* Key Insight */}
-      <div className="mt-6 bg-red-50 border-l-4 border-red-500 p-4 rounded-lg">
-        <div className="flex items-center gap-2">
-          <div className="text-red-700 text-lg">
-            🔴 <span className="ml-2">Key Insight:</span>
-          </div>
+      {/* Key Insight Box */}
+      <div className="bg-blue-50 border-l-4 border-blue-600 p-4">
+        <h4 className="font-semibold text-blue-900 mb-2">🔑 KEY INSIGHT:</h4>
+        <div className="space-y-1 text-sm text-blue-800">
+          <p>• Light load + Aggressive = <span className="font-bold">+2.5%</span> (minimal impact)</p>
+          <p>• Medium load + Aggressive = <span className="font-bold">+7.4%</span> (moderate impact)</p>
+          <p className="text-red-600 font-bold text-base">
+            • Heavy load + Aggressive = <span className="text-xl">+17.3%</span> (CRITICAL!) ← THE PROBLEM
+          </p>
         </div>
-        <p className="text-red-800 mt-2">
-          Heavy Load + Aggressive Acceleration = Highest fuel waste
-        </p>
-        <p className="text-red-600 text-sm mt-1">
-          This combination accounts for the majority of preventable fuel consumption
-        </p>
       </div>
 
-      {/* Color Legend */}
-      <div className="mt-4 flex gap-4 justify-center text-sm">
-        <div className="flex items-center gap-2">
-          <div className="w-4 h-4 bg-green-500 rounded"></div>
-          <span className="text-gray-700">Optimal</span>
+      {scenarioType === 'wasteful' && (
+        <div className="bg-red-50 border border-red-200 rounded p-3 text-sm">
+          <p className="text-red-900 font-bold">
+            ⚠️ Current scenario demonstrates this exact problem!
+          </p>
+          <p className="text-red-700 mt-1">
+            Heavy bus (72 passengers) + Aggressive acceleration = 17% fuel waste
+          </p>
         </div>
-        <div className="flex items-center gap-2">
-          <div className="w-4 h-4 bg-amber-500 rounded"></div>
-          <span className="text-gray-700">Acceptable</span>
-        </div>
-        <div className="flex items-center gap-2">
-          <div className="w-4 h-4 bg-red-500 rounded"></div>
-          <span className="text-gray-700">Wasteful</span>
-        </div>
-      </div>
+      )}
     </div>
   );
 }
