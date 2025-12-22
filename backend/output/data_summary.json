@@ -1,0 +1,10 @@
+{
+  "total_trips": 300,
+  "peak_trips": 100,
+  "off_peak_trips": 200,
+  "light_load_trips": 179,
+  "medium_load_trips": 21,
+  "heavy_load_trips": 100,
+  "route": "12",
+  "period": "Week of Dec 16-20, 2024"
+}
