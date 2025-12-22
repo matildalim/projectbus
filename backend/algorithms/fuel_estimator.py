@@ -324,3 +324,12 @@ def test_estimator():
 
 if __name__ == "__main__":
     test_estimator()
+    
+    #**The Fuel Impact Matrix shows:**
+#- Light load + Aggressive = Only 2.5% penalty (negligible)
+#- Heavy load + Aggressive = **17.3% penalty** (CRITICAL!)
+
+#**This is the physics-based proof that:**
+#1. Acceleration style matters 7x more with heavy loads
+#2. Drivers need load-aware guidance
+#3. Your solution can save significant fuel
