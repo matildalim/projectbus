@@ -1,0 +1,773 @@
+{
+  "trip_id": "T2024121635K01",
+  "bus_id": "SBS1235K",
+  "driver_id": "D001",
+  "date": "2024-12-16",
+  "is_peak": false,
+  "load": {
+    "trip_id": "T2024121635K01",
+    "dominant_load_category": "LIGHT",
+    "max_passenger_count": 21,
+    "avg_passenger_count": 11.9,
+    "heavy_load_segments": 0,
+    "total_segments": 10,
+    "segments": [
+      {
+        "segment_id": 0,
+        "stop_name": "Tampines Interchange",
+        "passenger_count": 3,
+        "load_category": "LIGHT",
+        "capacity_percentage": 3.6,
+        "total_weight_kg": 12210
+      },
+      {
+        "segment_id": 1,
+        "stop_name": "Tampines Ave 4",
+        "passenger_count": 5,
+        "load_category": "LIGHT",
+        "capacity_percentage": 6.0,
+        "total_weight_kg": 12350
+      },
+      {
+        "segment_id": 2,
+        "stop_name": "Simei MRT",
+        "passenger_count": 8,
+        "load_category": "LIGHT",
+        "capacity_percentage": 9.5,
+        "total_weight_kg": 12560
+      },
+      {
+        "segment_id": 3,
+        "stop_name": "Bedok North",
+        "passenger_count": 11,
+        "load_category": "LIGHT",
+        "capacity_percentage": 13.1,
+        "total_weight_kg": 12770
+      },
+      {
+        "segment_id": 4,
+        "stop_name": "Bedok Reservoir",
+        "passenger_count": 11,
+        "load_category": "LIGHT",
+        "capacity_percentage": 13.1,
+        "total_weight_kg": 12770
+      },
+      {
+        "segment_id": 5,
+        "stop_name": "Bedok Interchange",
+        "passenger_count": 14,
+        "load_category": "LIGHT",
+        "capacity_percentage": 16.7,
+        "total_weight_kg": 12980
+      },
+      {
+        "segment_id": 6,
+        "stop_name": "Bedok South",
+        "passenger_count": 11,
+        "load_category": "LIGHT",
+        "capacity_percentage": 13.1,
+        "total_weight_kg": 12770
+      },
+      {
+        "segment_id": 7,
+        "stop_name": "Tanah Merah",
+        "passenger_count": 15,
+        "load_category": "LIGHT",
+        "capacity_percentage": 17.9,
+        "total_weight_kg": 13050
+      },
+      {
+        "segment_id": 8,
+        "stop_name": "Siglap",
+        "passenger_count": 20,
+        "load_category": "LIGHT",
+        "capacity_percentage": 23.8,
+        "total_weight_kg": 13400
+      },
+      {
+        "segment_id": 9,
+        "stop_name": "Marine Parade",
+        "passenger_count": 21,
+        "load_category": "LIGHT",
+        "capacity_percentage": 25.0,
+        "total_weight_kg": 13470
+      }
+    ]
+  },
+  "acceleration": {
+    "trip_id": "T2024121635K01",
+    "dominant_pattern": "GENTLE",
+    "avg_acceleration": 0.5,
+    "max_acceleration": 0.5,
+    "total_events": 45,
+    "gentle_count": 45,
+    "gentle_percentage": 100.0,
+    "moderate_count": 0,
+    "moderate_percentage": 0.0,
+    "aggressive_count": 0,
+    "aggressive_percentage": 0.0,
+    "segments": [
+      {
+        "segment_id": 0,
+        "category": "GENTLE",
+        "avg_acceleration": 0.5,
+        "max_acceleration": 0.5,
+        "total_events": 5,
+        "gentle_count": 5,
+        "moderate_count": 0,
+        "aggressive_count": 0,
+        "acceleration_events": [
+          {
+            "start_time": 0,
+            "end_time": 5,
+            "start_speed_kmh": 0,
+            "end_speed_kmh": 9.0,
+            "acceleration_ms2": 0.5,
+            "category": "GENTLE",
+            "segment": 0
+          },
+          {
+            "start_time": 5,
+            "end_time": 10,
+            "start_speed_kmh": 9.0,
+            "end_speed_kmh": 18.0,
+            "acceleration_ms2": 0.5,
+            "category": "GENTLE",
+            "segment": 0
+          },
+          {
+            "start_time": 10,
+            "end_time": 15,
+            "start_speed_kmh": 18.0,
+            "end_speed_kmh": 27.0,
+            "acceleration_ms2": 0.5,
+            "category": "GENTLE",
+            "segment": 0
+          },
+          {
+            "start_time": 15,
+            "end_time": 20,
+            "start_speed_kmh": 27.0,
+            "end_speed_kmh": 36.0,
+            "acceleration_ms2": 0.5,
+            "category": "GENTLE",
+            "segment": 0
+          },
+          {
+            "start_time": 20,
+            "end_time": 25,
+            "start_speed_kmh": 36.0,
+            "end_speed_kmh": 45.0,
+            "acceleration_ms2": 0.5,
+            "category": "GENTLE",
+            "segment": 0
+          }
+        ]
+      },
+      {
+        "segment_id": 1,
+        "category": "GENTLE",
+        "avg_acceleration": 0.5,
+        "max_acceleration": 0.5,
+        "total_events": 5,
+        "gentle_count": 5,
+        "moderate_count": 0,
+        "aggressive_count": 0,
+        "acceleration_events": [
+          {
+            "start_time": 0,
+            "end_time": 5,
+            "start_speed_kmh": 0,
+            "end_speed_kmh": 9.0,
+            "acceleration_ms2": 0.5,
+            "category": "GENTLE",
+            "segment": 1
+          },
+          {
+            "start_time": 5,
+            "end_time": 10,
+            "start_speed_kmh": 9.0,
+            "end_speed_kmh": 18.0,
+            "acceleration_ms2": 0.5,
+            "category": "GENTLE",
+            "segment": 1
+          },
+          {
+            "start_time": 10,
+            "end_time": 15,
+            "start_speed_kmh": 18.0,
+            "end_speed_kmh": 27.0,
+            "acceleration_ms2": 0.5,
+            "category": "GENTLE",
+            "segment": 1
+          },
+          {
+            "start_time": 15,
+            "end_time": 20,
+            "start_speed_kmh": 27.0,
+            "end_speed_kmh": 36.0,
+            "acceleration_ms2": 0.5,
+            "category": "GENTLE",
+            "segment": 1
+          },
+          {
+            "start_time": 20,
+            "end_time": 25,
+            "start_speed_kmh": 36.0,
+            "end_speed_kmh": 45.0,
+            "acceleration_ms2": 0.5,
+            "category": "GENTLE",
+            "segment": 1
+          }
+        ]
+      },
+      {
+        "segment_id": 2,
+        "category": "GENTLE",
+        "avg_acceleration": 0.5,
+        "max_acceleration": 0.5,
+        "total_events": 5,
+        "gentle_count": 5,
+        "moderate_count": 0,
+        "aggressive_count": 0,
+        "acceleration_events": [
+          {
+            "start_time": 0,
+            "end_time": 5,
+            "start_speed_kmh": 0,
+            "end_speed_kmh": 9.0,
+            "acceleration_ms2": 0.5,
+            "category": "GENTLE",
+            "segment": 2
+          },
+          {
+            "start_time": 5,
+            "end_time": 10,
+            "start_speed_kmh": 9.0,
+            "end_speed_kmh": 18.0,
+            "acceleration_ms2": 0.5,
+            "category": "GENTLE",
+            "segment": 2
+          },
+          {
+            "start_time": 10,
+            "end_time": 15,
+            "start_speed_kmh": 18.0,
+            "end_speed_kmh": 27.0,
+            "acceleration_ms2": 0.5,
+            "category": "GENTLE",
+            "segment": 2
+          },
+          {
+            "start_time": 15,
+            "end_time": 20,
+            "start_speed_kmh": 27.0,
+            "end_speed_kmh": 36.0,
+            "acceleration_ms2": 0.5,
+            "category": "GENTLE",
+            "segment": 2
+          },
+          {
+            "start_time": 20,
+            "end_time": 25,
+            "start_speed_kmh": 36.0,
+            "end_speed_kmh": 45.0,
+            "acceleration_ms2": 0.5,
+            "category": "GENTLE",
+            "segment": 2
+          }
+        ]
+      },
+      {
+        "segment_id": 3,
+        "category": "GENTLE",
+        "avg_acceleration": 0.5,
+        "max_acceleration": 0.5,
+        "total_events": 5,
+        "gentle_count": 5,
+        "moderate_count": 0,
+        "aggressive_count": 0,
+        "acceleration_events": [
+          {
+            "start_time": 0,
+            "end_time": 5,
+            "start_speed_kmh": 0,
+            "end_speed_kmh": 9.0,
+            "acceleration_ms2": 0.5,
+            "category": "GENTLE",
+            "segment": 3
+          },
+          {
+            "start_time": 5,
+            "end_time": 10,
+            "start_speed_kmh": 9.0,
+            "end_speed_kmh": 18.0,
+            "acceleration_ms2": 0.5,
+            "category": "GENTLE",
+            "segment": 3
+          },
+          {
+            "start_time": 10,
+            "end_time": 15,
+            "start_speed_kmh": 18.0,
+            "end_speed_kmh": 27.0,
+            "acceleration_ms2": 0.5,
+            "category": "GENTLE",
+            "segment": 3
+          },
+          {
+            "start_time": 15,
+            "end_time": 20,
+            "start_speed_kmh": 27.0,
+            "end_speed_kmh": 36.0,
+            "acceleration_ms2": 0.5,
+            "category": "GENTLE",
+            "segment": 3
+          },
+          {
+            "start_time": 20,
+            "end_time": 25,
+            "start_speed_kmh": 36.0,
+            "end_speed_kmh": 45.0,
+            "acceleration_ms2": 0.5,
+            "category": "GENTLE",
+            "segment": 3
+          }
+        ]
+      },
+      {
+        "segment_id": 4,
+        "category": "GENTLE",
+        "avg_acceleration": 0.5,
+        "max_acceleration": 0.5,
+        "total_events": 5,
+        "gentle_count": 5,
+        "moderate_count": 0,
+        "aggressive_count": 0,
+        "acceleration_events": [
+          {
+            "start_time": 0,
+            "end_time": 5,
+            "start_speed_kmh": 0,
+            "end_speed_kmh": 9.0,
+            "acceleration_ms2": 0.5,
+            "category": "GENTLE",
+            "segment": 4
+          },
+          {
+            "start_time": 5,
+            "end_time": 10,
+            "start_speed_kmh": 9.0,
+            "end_speed_kmh": 18.0,
+            "acceleration_ms2": 0.5,
+            "category": "GENTLE",
+            "segment": 4
+          },
+          {
+            "start_time": 10,
+            "end_time": 15,
+            "start_speed_kmh": 18.0,
+            "end_speed_kmh": 27.0,
+            "acceleration_ms2": 0.5,
+            "category": "GENTLE",
+            "segment": 4
+          },
+          {
+            "start_time": 15,
+            "end_time": 20,
+            "start_speed_kmh": 27.0,
+            "end_speed_kmh": 36.0,
+            "acceleration_ms2": 0.5,
+            "category": "GENTLE",
+            "segment": 4
+          },
+          {
+            "start_time": 20,
+            "end_time": 25,
+            "start_speed_kmh": 36.0,
+            "end_speed_kmh": 45.0,
+            "acceleration_ms2": 0.5,
+            "category": "GENTLE",
+            "segment": 4
+          }
+        ]
+      },
+      {
+        "segment_id": 5,
+        "category": "GENTLE",
+        "avg_acceleration": 0.5,
+        "max_acceleration": 0.5,
+        "total_events": 5,
+        "gentle_count": 5,
+        "moderate_count": 0,
+        "aggressive_count": 0,
+        "acceleration_events": [
+          {
+            "start_time": 0,
+            "end_time": 5,
+            "start_speed_kmh": 0,
+            "end_speed_kmh": 9.0,
+            "acceleration_ms2": 0.5,
+            "category": "GENTLE",
+            "segment": 5
+          },
+          {
+            "start_time": 5,
+            "end_time": 10,
+            "start_speed_kmh": 9.0,
+            "end_speed_kmh": 18.0,
+            "acceleration_ms2": 0.5,
+            "category": "GENTLE",
+            "segment": 5
+          },
+          {
+            "start_time": 10,
+            "end_time": 15,
+            "start_speed_kmh": 18.0,
+            "end_speed_kmh": 27.0,
+            "acceleration_ms2": 0.5,
+            "category": "GENTLE",
+            "segment": 5
+          },
+          {
+            "start_time": 15,
+            "end_time": 20,
+            "start_speed_kmh": 27.0,
+            "end_speed_kmh": 36.0,
+            "acceleration_ms2": 0.5,
+            "category": "GENTLE",
+            "segment": 5
+          },
+          {
+            "start_time": 20,
+            "end_time": 25,
+            "start_speed_kmh": 36.0,
+            "end_speed_kmh": 45.0,
+            "acceleration_ms2": 0.5,
+            "category": "GENTLE",
+            "segment": 5
+          }
+        ]
+      },
+      {
+        "segment_id": 6,
+        "category": "GENTLE",
+        "avg_acceleration": 0.5,
+        "max_acceleration": 0.5,
+        "total_events": 5,
+        "gentle_count": 5,
+        "moderate_count": 0,
+        "aggressive_count": 0,
+        "acceleration_events": [
+          {
+            "start_time": 0,
+            "end_time": 5,
+            "start_speed_kmh": 0,
+            "end_speed_kmh": 9.0,
+            "acceleration_ms2": 0.5,
+            "category": "GENTLE",
+            "segment": 6
+          },
+          {
+            "start_time": 5,
+            "end_time": 10,
+            "start_speed_kmh": 9.0,
+            "end_speed_kmh": 18.0,
+            "acceleration_ms2": 0.5,
+            "category": "GENTLE",
+            "segment": 6
+          },
+          {
+            "start_time": 10,
+            "end_time": 15,
+            "start_speed_kmh": 18.0,
+            "end_speed_kmh": 27.0,
+            "acceleration_ms2": 0.5,
+            "category": "GENTLE",
+            "segment": 6
+          },
+          {
+            "start_time": 15,
+            "end_time": 20,
+            "start_speed_kmh": 27.0,
+            "end_speed_kmh": 36.0,
+            "acceleration_ms2": 0.5,
+            "category": "GENTLE",
+            "segment": 6
+          },
+          {
+            "start_time": 20,
+            "end_time": 25,
+            "start_speed_kmh": 36.0,
+            "end_speed_kmh": 45.0,
+            "acceleration_ms2": 0.5,
+            "category": "GENTLE",
+            "segment": 6
+          }
+        ]
+      },
+      {
+        "segment_id": 7,
+        "category": "GENTLE",
+        "avg_acceleration": 0.5,
+        "max_acceleration": 0.5,
+        "total_events": 5,
+        "gentle_count": 5,
+        "moderate_count": 0,
+        "aggressive_count": 0,
+        "acceleration_events": [
+          {
+            "start_time": 0,
+            "end_time": 5,
+            "start_speed_kmh": 0,
+            "end_speed_kmh": 9.0,
+            "acceleration_ms2": 0.5,
+            "category": "GENTLE",
+            "segment": 7
+          },
+          {
+            "start_time": 5,
+            "end_time": 10,
+            "start_speed_kmh": 9.0,
+            "end_speed_kmh": 18.0,
+            "acceleration_ms2": 0.5,
+            "category": "GENTLE",
+            "segment": 7
+          },
+          {
+            "start_time": 10,
+            "end_time": 15,
+            "start_speed_kmh": 18.0,
+            "end_speed_kmh": 27.0,
+            "acceleration_ms2": 0.5,
+            "category": "GENTLE",
+            "segment": 7
+          },
+          {
+            "start_time": 15,
+            "end_time": 20,
+            "start_speed_kmh": 27.0,
+            "end_speed_kmh": 36.0,
+            "acceleration_ms2": 0.5,
+            "category": "GENTLE",
+            "segment": 7
+          },
+          {
+            "start_time": 20,
+            "end_time": 25,
+            "start_speed_kmh": 36.0,
+            "end_speed_kmh": 45.0,
+            "acceleration_ms2": 0.5,
+            "category": "GENTLE",
+            "segment": 7
+          }
+        ]
+      },
+      {
+        "segment_id": 8,
+        "category": "GENTLE",
+        "avg_acceleration": 0.5,
+        "max_acceleration": 0.5,
+        "total_events": 5,
+        "gentle_count": 5,
+        "moderate_count": 0,
+        "aggressive_count": 0,
+        "acceleration_events": [
+          {
+            "start_time": 0,
+            "end_time": 5,
+            "start_speed_kmh": 0,
+            "end_speed_kmh": 9.0,
+            "acceleration_ms2": 0.5,
+            "category": "GENTLE",
+            "segment": 8
+          },
+          {
+            "start_time": 5,
+            "end_time": 10,
+            "start_speed_kmh": 9.0,
+            "end_speed_kmh": 18.0,
+            "acceleration_ms2": 0.5,
+            "category": "GENTLE",
+            "segment": 8
+          },
+          {
+            "start_time": 10,
+            "end_time": 15,
+            "start_speed_kmh": 18.0,
+            "end_speed_kmh": 27.0,
+            "acceleration_ms2": 0.5,
+            "category": "GENTLE",
+            "segment": 8
+          },
+          {
+            "start_time": 15,
+            "end_time": 20,
+            "start_speed_kmh": 27.0,
+            "end_speed_kmh": 36.0,
+            "acceleration_ms2": 0.5,
+            "category": "GENTLE",
+            "segment": 8
+          },
+          {
+            "start_time": 20,
+            "end_time": 25,
+            "start_speed_kmh": 36.0,
+            "end_speed_kmh": 45.0,
+            "acceleration_ms2": 0.5,
+            "category": "GENTLE",
+            "segment": 8
+          }
+        ]
+      }
+    ]
+  },
+  "fuel": {
+    "trip_id": "T2024121635K01",
+    "total_distance_km": 15.2,
+    "total_fuel_liters": 12.16,
+    "optimal_fuel_liters": 12.16,
+    "wasted_fuel_liters": 0.0,
+    "waste_percentage": 0.0,
+    "avg_fuel_per_km": 0.8,
+    "optimal_fuel_per_km": 0.8,
+    "total_cost_sgd": 18.24,
+    "wasted_cost_sgd": 0.0,
+    "problem_segments": 0,
+    "segments": [
+      {
+        "load_category": "LIGHT",
+        "accel_category": "GENTLE",
+        "distance_km": 1.6888888888888889,
+        "fuel_rate_per_km": 0.8,
+        "total_fuel_liters": 1.351,
+        "optimal_fuel_liters": 1.351,
+        "excess_fuel_liters": 0.0,
+        "penalty_percentage": 0.0,
+        "is_optimal": true,
+        "cost_sgd": 2.03,
+        "segment_id": 0,
+        "stop_name": "Tampines Interchange"
+      },
+      {
+        "load_category": "LIGHT",
+        "accel_category": "GENTLE",
+        "distance_km": 1.6888888888888889,
+        "fuel_rate_per_km": 0.8,
+        "total_fuel_liters": 1.351,
+        "optimal_fuel_liters": 1.351,
+        "excess_fuel_liters": 0.0,
+        "penalty_percentage": 0.0,
+        "is_optimal": true,
+        "cost_sgd": 2.03,
+        "segment_id": 1,
+        "stop_name": "Tampines Ave 4"
+      },
+      {
+        "load_category": "LIGHT",
+        "accel_category": "GENTLE",
+        "distance_km": 1.6888888888888889,
+        "fuel_rate_per_km": 0.8,
+        "total_fuel_liters": 1.351,
+        "optimal_fuel_liters": 1.351,
+        "excess_fuel_liters": 0.0,
+        "penalty_percentage": 0.0,
+        "is_optimal": true,
+        "cost_sgd": 2.03,
+        "segment_id": 2,
+        "stop_name": "Simei MRT"
+      },
+      {
+        "load_category": "LIGHT",
+        "accel_category": "GENTLE",
+        "distance_km": 1.6888888888888889,
+        "fuel_rate_per_km": 0.8,
+        "total_fuel_liters": 1.351,
+        "optimal_fuel_liters": 1.351,
+        "excess_fuel_liters": 0.0,
+        "penalty_percentage": 0.0,
+        "is_optimal": true,
+        "cost_sgd": 2.03,
+        "segment_id": 3,
+        "stop_name": "Bedok North"
+      },
+      {
+        "load_category": "LIGHT",
+        "accel_category": "GENTLE",
+        "distance_km": 1.6888888888888889,
+        "fuel_rate_per_km": 0.8,
+        "total_fuel_liters": 1.351,
+        "optimal_fuel_liters": 1.351,
+        "excess_fuel_liters": 0.0,
+        "penalty_percentage": 0.0,
+        "is_optimal": true,
+        "cost_sgd": 2.03,
+        "segment_id": 4,
+        "stop_name": "Bedok Reservoir"
+      },
+      {
+        "load_category": "LIGHT",
+        "accel_category": "GENTLE",
+        "distance_km": 1.6888888888888889,
+        "fuel_rate_per_km": 0.8,
+        "total_fuel_liters": 1.351,
+        "optimal_fuel_liters": 1.351,
+        "excess_fuel_liters": 0.0,
+        "penalty_percentage": 0.0,
+        "is_optimal": true,
+        "cost_sgd": 2.03,
+        "segment_id": 5,
+        "stop_name": "Bedok Interchange"
+      },
+      {
+        "load_category": "LIGHT",
+        "accel_category": "GENTLE",
+        "distance_km": 1.6888888888888889,
+        "fuel_rate_per_km": 0.8,
+        "total_fuel_liters": 1.351,
+        "optimal_fuel_liters": 1.351,
+        "excess_fuel_liters": 0.0,
+        "penalty_percentage": 0.0,
+        "is_optimal": true,
+        "cost_sgd": 2.03,
+        "segment_id": 6,
+        "stop_name": "Bedok South"
+      },
+      {
+        "load_category": "LIGHT",
+        "accel_category": "GENTLE",
+        "distance_km": 1.6888888888888889,
+        "fuel_rate_per_km": 0.8,
+        "total_fuel_liters": 1.351,
+        "optimal_fuel_liters": 1.351,
+        "excess_fuel_liters": 0.0,
+        "penalty_percentage": 0.0,
+        "is_optimal": true,
+        "cost_sgd": 2.03,
+        "segment_id": 7,
+        "stop_name": "Tanah Merah"
+      },
+      {
+        "load_category": "LIGHT",
+        "accel_category": "GENTLE",
+        "distance_km": 1.6888888888888889,
+        "fuel_rate_per_km": 0.8,
+        "total_fuel_liters": 1.351,
+        "optimal_fuel_liters": 1.351,
+        "excess_fuel_liters": 0.0,
+        "penalty_percentage": 0.0,
+        "is_optimal": true,
+        "cost_sgd": 2.03,
+        "segment_id": 8,
+        "stop_name": "Siglap"
+      }
+    ]
+  },
+  "savings": {
+    "trip_id": "T2024121635K01",
+    "has_savings": false,
+    "total_wasted_fuel": 0,
+    "total_wasted_cost": 0,
+    "recommendation": "Trip is already optimally driven"
+  }
+}

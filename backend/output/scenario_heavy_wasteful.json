@@ -1,0 +1,349 @@
+{
+  "trip_id": "DEMO_HEAVY_WASTEFUL",
+  "bus_id": "SBS1238K",
+  "driver_id": "D007",
+  "date": "2024-12-16",
+  "is_peak": true,
+  "load": {
+    "trip_id": "DEMO_HEAVY_WASTEFUL",
+    "dominant_load_category": "HEAVY",
+    "max_passenger_count": 72,
+    "avg_passenger_count": 65.3,
+    "heavy_load_segments": 5,
+    "total_segments": 9,
+    "segments": [
+      {
+        "segment_id": 0,
+        "stop_name": "Tampines Interchange",
+        "passenger_count": 45,
+        "load_category": "MEDIUM",
+        "capacity_percentage": 53.6,
+        "total_weight_kg": 15150
+      },
+      {
+        "segment_id": 1,
+        "stop_name": "Tampines Ave 4",
+        "passenger_count": 58,
+        "load_category": "MEDIUM",
+        "capacity_percentage": 69.0,
+        "total_weight_kg": 16060
+      },
+      {
+        "segment_id": 2,
+        "stop_name": "Simei MRT",
+        "passenger_count": 72,
+        "load_category": "HEAVY",
+        "capacity_percentage": 85.7,
+        "total_weight_kg": 17040
+      },
+      {
+        "segment_id": 3,
+        "stop_name": "Bedok North",
+        "passenger_count": 70,
+        "load_category": "HEAVY",
+        "capacity_percentage": 83.3,
+        "total_weight_kg": 16900
+      },
+      {
+        "segment_id": 4,
+        "stop_name": "Bedok Reservoir",
+        "passenger_count": 68,
+        "load_category": "HEAVY",
+        "capacity_percentage": 81.0,
+        "total_weight_kg": 16760
+      },
+      {
+        "segment_id": 5,
+        "stop_name": "Bedok Interchange",
+        "passenger_count": 65,
+        "load_category": "HEAVY",
+        "capacity_percentage": 77.4,
+        "total_weight_kg": 16550
+      },
+      {
+        "segment_id": 6,
+        "stop_name": "Bedok South",
+        "passenger_count": 63,
+        "load_category": "HEAVY",
+        "capacity_percentage": 75.0,
+        "total_weight_kg": 16410
+      },
+      {
+        "segment_id": 7,
+        "stop_name": "Tanah Merah",
+        "passenger_count": 61,
+        "load_category": "HEAVY",
+        "capacity_percentage": 72.6,
+        "total_weight_kg": 16270
+      },
+      {
+        "segment_id": 8,
+        "stop_name": "Siglap",
+        "passenger_count": 48,
+        "load_category": "MEDIUM",
+        "capacity_percentage": 57.1,
+        "total_weight_kg": 15360
+      }
+    ]
+  },
+  "acceleration": {
+    "trip_id": "DEMO_HEAVY_WASTEFUL",
+    "dominant_pattern": "AGGRESSIVE",
+    "avg_acceleration": 2.8,
+    "max_acceleration": 3.2,
+    "total_events": 15,
+    "gentle_count": 2,
+    "gentle_percentage": 13.3,
+    "moderate_count": 3,
+    "moderate_percentage": 20.0,
+    "aggressive_count": 10,
+    "aggressive_percentage": 66.7,
+    "segments": [
+      {
+        "segment_id": 0,
+        "category": "MODERATE",
+        "avg_acceleration": 2.1,
+        "max_acceleration": 2.4
+      },
+      {
+        "segment_id": 1,
+        "category": "AGGRESSIVE",
+        "avg_acceleration": 2.9,
+        "max_acceleration": 3.1
+      },
+      {
+        "segment_id": 2,
+        "category": "AGGRESSIVE",
+        "avg_acceleration": 3.1,
+        "max_acceleration": 3.2
+      },
+      {
+        "segment_id": 3,
+        "category": "AGGRESSIVE",
+        "avg_acceleration": 2.8,
+        "max_acceleration": 3.0
+      },
+      {
+        "segment_id": 4,
+        "category": "AGGRESSIVE",
+        "avg_acceleration": 3.0,
+        "max_acceleration": 3.2
+      },
+      {
+        "segment_id": 5,
+        "category": "AGGRESSIVE",
+        "avg_acceleration": 2.7,
+        "max_acceleration": 2.9
+      },
+      {
+        "segment_id": 6,
+        "category": "AGGRESSIVE",
+        "avg_acceleration": 2.9,
+        "max_acceleration": 3.1
+      },
+      {
+        "segment_id": 7,
+        "category": "MODERATE",
+        "avg_acceleration": 2.3,
+        "max_acceleration": 2.5
+      },
+      {
+        "segment_id": 8,
+        "category": "MODERATE",
+        "avg_acceleration": 2.0,
+        "max_acceleration": 2.2
+      }
+    ]
+  },
+  "fuel": {
+    "trip_id": "DEMO_HEAVY_WASTEFUL",
+    "total_distance_km": 15.2,
+    "total_fuel_liters": 16.82,
+    "optimal_fuel_liters": 14.35,
+    "wasted_fuel_liters": 2.47,
+    "waste_percentage": 17.2,
+    "avg_fuel_per_km": 1.107,
+    "optimal_fuel_per_km": 0.944,
+    "total_cost_sgd": 25.23,
+    "wasted_cost_sgd": 3.71,
+    "problem_segments": 5,
+    "segments": [
+      {
+        "segment_id": 0,
+        "load_category": "MEDIUM",
+        "accel_category": "MODERATE",
+        "distance_km": 1.69,
+        "fuel_rate_per_km": 0.92,
+        "total_fuel_liters": 1.55,
+        "optimal_fuel_liters": 1.49,
+        "excess_fuel_liters": 0.06
+      },
+      {
+        "segment_id": 1,
+        "load_category": "MEDIUM",
+        "accel_category": "AGGRESSIVE",
+        "distance_km": 1.69,
+        "fuel_rate_per_km": 0.945,
+        "total_fuel_liters": 1.6,
+        "optimal_fuel_liters": 1.49,
+        "excess_fuel_liters": 0.11
+      },
+      {
+        "segment_id": 2,
+        "load_category": "HEAVY",
+        "accel_category": "AGGRESSIVE",
+        "distance_km": 1.69,
+        "fuel_rate_per_km": 1.15,
+        "total_fuel_liters": 1.94,
+        "optimal_fuel_liters": 1.66,
+        "excess_fuel_liters": 0.29
+      },
+      {
+        "segment_id": 3,
+        "load_category": "HEAVY",
+        "accel_category": "AGGRESSIVE",
+        "distance_km": 1.69,
+        "fuel_rate_per_km": 1.15,
+        "total_fuel_liters": 1.94,
+        "optimal_fuel_liters": 1.66,
+        "excess_fuel_liters": 0.29
+      },
+      {
+        "segment_id": 4,
+        "load_category": "HEAVY",
+        "accel_category": "AGGRESSIVE",
+        "distance_km": 1.69,
+        "fuel_rate_per_km": 1.15,
+        "total_fuel_liters": 1.94,
+        "optimal_fuel_liters": 1.66,
+        "excess_fuel_liters": 0.29
+      },
+      {
+        "segment_id": 5,
+        "load_category": "HEAVY",
+        "accel_category": "AGGRESSIVE",
+        "distance_km": 1.69,
+        "fuel_rate_per_km": 1.15,
+        "total_fuel_liters": 1.94,
+        "optimal_fuel_liters": 1.66,
+        "excess_fuel_liters": 0.29
+      },
+      {
+        "segment_id": 6,
+        "load_category": "HEAVY",
+        "accel_category": "AGGRESSIVE",
+        "distance_km": 1.69,
+        "fuel_rate_per_km": 1.15,
+        "total_fuel_liters": 1.94,
+        "optimal_fuel_liters": 1.66,
+        "excess_fuel_liters": 0.29
+      },
+      {
+        "segment_id": 7,
+        "load_category": "HEAVY",
+        "accel_category": "MODERATE",
+        "distance_km": 1.69,
+        "fuel_rate_per_km": 1.05,
+        "total_fuel_liters": 1.77,
+        "optimal_fuel_liters": 1.66,
+        "excess_fuel_liters": 0.12
+      },
+      {
+        "segment_id": 8,
+        "load_category": "MEDIUM",
+        "accel_category": "MODERATE",
+        "distance_km": 1.69,
+        "fuel_rate_per_km": 0.92,
+        "total_fuel_liters": 1.55,
+        "optimal_fuel_liters": 1.49,
+        "excess_fuel_liters": 0.06
+      }
+    ]
+  },
+  "savings": {
+    "trip_id": "DEMO_HEAVY_WASTEFUL",
+    "has_savings": true,
+    "total_wasted_fuel": 2.47,
+    "total_wasted_cost": 3.71,
+    "waste_percentage": 17.2,
+    "heavy_aggressive_segments": 5,
+    "heavy_aggressive_waste": 1.44,
+    "priority": "CRITICAL",
+    "main_issue": "5 segments with HEAVY load (>60 passengers) + AGGRESSIVE acceleration",
+    "main_action": "Use GENTLE acceleration when passenger count exceeds 60",
+    "segments": [
+      {
+        "segment_id": 0,
+        "stop_name": "Tampines Interchange",
+        "has_savings_potential": true,
+        "wasted_fuel": 0.06,
+        "wasted_cost": 0.09,
+        "priority": "LOW"
+      },
+      {
+        "segment_id": 1,
+        "stop_name": "Tampines Ave 4",
+        "has_savings_potential": true,
+        "wasted_fuel": 0.11,
+        "wasted_cost": 0.17,
+        "priority": "MEDIUM"
+      },
+      {
+        "segment_id": 2,
+        "stop_name": "Simei MRT",
+        "has_savings_potential": true,
+        "wasted_fuel": 0.29,
+        "wasted_cost": 0.43,
+        "priority": "CRITICAL"
+      },
+      {
+        "segment_id": 3,
+        "stop_name": "Bedok North",
+        "has_savings_potential": true,
+        "wasted_fuel": 0.29,
+        "wasted_cost": 0.43,
+        "priority": "CRITICAL"
+      },
+      {
+        "segment_id": 4,
+        "stop_name": "Bedok Reservoir",
+        "has_savings_potential": true,
+        "wasted_fuel": 0.29,
+        "wasted_cost": 0.43,
+        "priority": "CRITICAL"
+      },
+      {
+        "segment_id": 5,
+        "stop_name": "Bedok Interchange",
+        "has_savings_potential": true,
+        "wasted_fuel": 0.29,
+        "wasted_cost": 0.43,
+        "priority": "CRITICAL"
+      },
+      {
+        "segment_id": 6,
+        "stop_name": "Bedok South",
+        "has_savings_potential": true,
+        "wasted_fuel": 0.29,
+        "wasted_cost": 0.43,
+        "priority": "CRITICAL"
+      },
+      {
+        "segment_id": 7,
+        "stop_name": "Tanah Merah",
+        "has_savings_potential": true,
+        "wasted_fuel": 0.12,
+        "wasted_cost": 0.18,
+        "priority": "HIGH"
+      },
+      {
+        "segment_id": 8,
+        "stop_name": "Siglap",
+        "has_savings_potential": true,
+        "wasted_fuel": 0.06,
+        "wasted_cost": 0.09,
+        "priority": "LOW"
+      }
+    ]
+  }
+}
