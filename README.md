@@ -72,7 +72,7 @@ python process_trips.py
 3. **Heavy Load Wasteful** - Aggressive acceleration, 1.15 L/km (17% penalty)
 
 ## Hackathon Context
-Built for SBS Transit Hackathon 2024 - Problem Statement 4: Fuel Efficiency Optimization
+Built for SBS Transit Hackathon 2025 - Problem Statement 4: Fuel Efficiency Optimization
 
-**Team:** [Your Name/Team Name]
-**Date:** December 2024
+**Team:** Matilda, Junming
+**Date:** December 2025
