@@ -34,6 +34,14 @@ projectbus-sbs/
     └── output/       # Generated JSON files
 ```
 
+## Documentation
+- Docs index: `docs/README.md`
+- Architecture and diagrams: `docs/ARCHITECTURE.md`
+- Backend pipeline and algorithms: `docs/BACKEND.md`
+- Frontend UI and data flow: `docs/FRONTEND.md`
+- Data model and JSON outputs: `docs/DATA.md`
+- Runbooks and guides: `docs/GUIDES.md`
+
 ## Tech Stack
 - **Frontend:** React + TypeScript + Vite + Tailwind CSS
 - **Backend:** Python 3.x

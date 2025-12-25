@@ -1,0 +1,50 @@
+{
+  "route": "12",
+  "period": "Week of Dec 16-20, 2024",
+  "total_trips": 300,
+  "by_load_category": {
+    "LIGHT": {
+      "count": 200,
+      "percentage": 66.7,
+      "avg_fuel_per_km": 0.801,
+      "total_fuel": 2434.9
+    },
+    "MEDIUM": {
+      "count": 11,
+      "percentage": 3.7,
+      "avg_fuel_per_km": 0.906,
+      "total_fuel": 151.4
+    },
+    "HEAVY": {
+      "count": 89,
+      "percentage": 29.7,
+      "avg_fuel_per_km": 0.955,
+      "total_fuel": 1291.2
+    }
+  },
+  "fleet_savings": {
+    "period": "Weekly",
+    "total_trips": 17,
+    "trips_with_waste": 17,
+    "waste_percentage": 100.0,
+    "weekly_fuel_waste": 5.2,
+    "weekly_cost_waste": 7.77,
+    "annual_fuel_waste": 270.9,
+    "annual_cost_waste": 404.04,
+    "critical_trips": 0,
+    "high_priority_trips": 0,
+    "medium_priority_trips": 17,
+    "total_heavy_aggressive_segments": 0,
+    "avg_waste_per_trip": 0.31
+  },
+  "sbs_fleet_projection": {
+    "basis": "Route 12 (Week of Dec 16-20, 2024)",
+    "projection_method": "Extrapolated to 127 routes (80% applicability)",
+    "total_fleet_buses": 3300,
+    "projected_annual_fuel_waste": 27523.0,
+    "projected_annual_cost_waste": 41050.0,
+    "cost_per_bus_per_year": 12.44,
+    "savings_if_50pct_adoption": 20525.0,
+    "savings_if_80pct_adoption": 32840.0
+  }
+}
